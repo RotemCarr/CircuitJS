@@ -1,1 +1,1 @@
-## Circuit_JS
+## CircuitJS

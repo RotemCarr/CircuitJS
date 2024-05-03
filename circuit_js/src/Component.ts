@@ -1,8 +1,6 @@
 export type Component = {
-    [key: string]: Components.Wire | Components.VoltageSource | Components.Ressistor | Components.Capacitor
+    [key: string]: Wire | VoltageSource | Ressistor | Capacitor
 }
-
-export module Components {
 
     export type Wire = {
         voltage?: number,
@@ -26,7 +24,6 @@ export module Components {
         voltage?: number,
         current?: number
     }
-}
 
 export class Circuit {
     components: Component[]

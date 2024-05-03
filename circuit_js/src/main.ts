@@ -1,9 +1,9 @@
-import { Component, Components, Circuit } from "./Component"
+import { Ressistor, VoltageSource, Wire, Circuit, Component } from "./Component"
 
 
-let res: Components.Ressistor = {res: 60}
-let vcc: Components.VoltageSource = {voltage: 5, bias: 2}
-let wire: Components.Wire = {}
+let res: Ressistor = {res: 60}
+let vcc: VoltageSource = {voltage: 5, bias: 2}
+let wire: Wire = {}
 
 const circuit = new Circuit([{vcc}])
 
@@ -18,4 +18,5 @@ circuit
     .closeCircuit()
 
     console.log(circuit.components)
+
 
